@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "hello.html",
+    "href": "hello.html",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "hello.html#meet-quarto",
+    "href": "hello.html#meet-quarto",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "hello.html#meet-the-penguins",
+    "href": "hello.html#meet-the-penguins",
+    "title": "Hello, Quarto",
+    "section": "2 Meet the penguins",
+    "text": "2 Meet the penguins\n\nThe penguins data from the palmerpenguins package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica."
+  },
+  {
+    "objectID": "hello.html#the-penguin-plot",
+    "href": "hello.html#the-penguin-plot",
+    "title": "Hello, Quarto",
+    "section": "3 The Penguin Plot",
+    "text": "3 The Penguin Plot\nThe plot below shows the relationship between flipper and bill lengths of these penguins.\n\n\nCode\nggplot(penguins, \n       aes(x = flipper_length_mm, y = bill_length_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  scale_color_manual(values = c(\"darkorange\",\"purple\",\"cyan4\")) +\n  labs(\n    title = \"Flipper and bill length\",\n    subtitle = \"Dimensions for penguins at Palmer Station LTER\",\n    x = \"Flipper length (mm)\", y = \"Bill length (mm)\",\n    color = \"Penguin species\", shape = \"Penguin species\"\n  ) +\n  theme_minimal()"
+  },
+  {
+    "objectID": "hello.html#the-penguin-table",
+    "href": "hello.html#the-penguin-table",
+    "title": "Hello, Quarto",
+    "section": "4 The Penguin Table",
+    "text": "4 The Penguin Table\n\nMy Table\n\n\nCol1\nCol2\nCol3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe table is taken from (Gokalp Yavuz and Schloerke 2020)"
+  },
+  {
+    "objectID": "STAT570_Lecture2.html",
+    "href": "STAT570_Lecture2.html",
+    "title": "STAT570 - Lecture2",
+    "section": "",
+    "text": "For this lecture, you need:"
+  },
+  {
+    "objectID": "STAT570_Lecture2.html#check-link-between-r-and-github",
+    "href": "STAT570_Lecture2.html#check-link-between-r-and-github",
+    "title": "STAT570 - Lecture2",
+    "section": "2.1 Check link between R and GitHub",
+    "text": "2.1 Check link between R and GitHub\nConfigure your user.name and user.email for git in RStudio with:\nusethis::use_git_config(\n  user.name = \"Charlie Brown\",          # actual first and last name\n  user.email = \"brown@example.com\"  # email associated with GitHub account\n  )\nCommunicating with GitHub requires authentication with your GitHub account. This is achieved by creating and securely storing a Personal Access Token (PAT). The Managing Git(Hub) Credentials vignette in the usethis (Wickham et al. 2023) package has details on using PATs, but for now the following should suffice.\nMake sure you are connected to the GitHub Account from R. Before going to use_github(), we have to take the token by typing:\n\n\nCode\nusethis::create_github_token()\n\n\nWrite something to the decsription. Take the token from there and type in console:\n\n\nCode\ngitcreds::gitcreds_set()\n\n\nPaste the token there and we are good to go.\nHighly recommended book Happy Git with R for advice on setting up and using Git with R (Bryan and Hester, n.d.)."
+  },
+  {
+    "objectID": "STAT570_Lecture2.html#connect-your-rstudio-to-a-github-repository",
+    "href": "STAT570_Lecture2.html#connect-your-rstudio-to-a-github-repository",
+    "title": "STAT570 - Lecture2",
+    "section": "2.2 Connect your RStudio to a GitHub Repository",
+    "text": "2.2 Connect your RStudio to a GitHub Repository\nCreate you repository in GitHub and copy the link from Github Code&gt;&gt;Clone&gt;&gt;HTTPS. Then move back to RStudio and File&gt;&gt;New Project&gt;&gt;Version Control&gt;&gt;Git&gt;&gt;Clone Git Repository and paste your link to URL and create a new Project."
+  },
+  {
+    "objectID": "STAT570_Lecture2.html#references",
+    "href": "STAT570_Lecture2.html#references",
+    "title": "STAT570 - Lecture2",
+    "section": "2.3 References:",
+    "text": "2.3 References:\nhttps://posit-conf-2023.github.io/pkg-dev/setup.html#install-r-package-development-tools\nGithub and RStudio: https://resources.github.com/github-and-rstudio/"
+  }
+]
